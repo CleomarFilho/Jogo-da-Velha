@@ -1,0 +1,96 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: #daf5fb;
+  color: #03171c;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  text-align: center;
+  background-color: #add8e6;
+  padding: 10px;
+}
+
+#header-title {
+  margin: 0;
+}
+
+#blocos {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#conteiner {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.blocos-content {
+  width: 100px;
+  height: 100px;
+  background-color: #185ae7;
+  border: 2px solid #250f8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.blocos-content:hover {
+  background-color: #0b3c9c;
+}
+
+.current-Player {
+  background-color: #0b3c9c !important;
+}
+
+#players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.card-player {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.name-player {
+  width: 80px;
+  height: 40px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.name-player.current-player {
+  background-color: #0b3c9c;
+  color: #fff;
+}
+#reiniciar {
+  width: 180px;
+  height: 40px;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #ff0000, #ff4500);
+  color: white;
+}
